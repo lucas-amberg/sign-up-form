@@ -32,13 +32,13 @@ body {
 
 .image-sidebar-container {
     width: clamp(0px, 25vw, 30vw);
-    height: max(1000px,100vh);
+    height: max(800px,100vh);
     overflow: hidden;
     position: relative;
 }
 
 .image-sidebar-container > img {
-    min-height: 100vh;
+    height: max(100vh,800px);
     width: auto;
     margin-left: -860px;
     opacity: 0.8;
@@ -65,15 +65,15 @@ body {
     width: 70vw;
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    height: max(100vh,800px);
 }
+
+
 
 .form-div {
 /*     border: 4px solid black; */
     width: 60vw;
-    height: 80vh;
+    height: max(80vh,300px);
     padding: 3vw;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .form-item > input {
     appearance: none;
-    height: 4.5vh;
+    height: min(37px, 4.5vh);
     border-radius: 0.5vh;
     border: 2px solid #AAA;
     font-size: 1.3rem;
@@ -115,7 +115,7 @@ form > ul {
     margin: 20px;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: max(50vh,350px);
 }
 
 button {
@@ -125,7 +125,7 @@ button {
     font-family: inter;
     padding: 10px;
     width: max(20vw,170px);
-    height: 5vh;
+    height: max(5vh,30px);
     border-radius: 0.7vh;
     border: none;
     font-size: max(1vw,0.8rem);
@@ -149,8 +149,8 @@ button {
     border-radius: 3px;
     font-family: inter;
     font-size: 0.75rem;
-    left: max(150px,17vw);
-    bottom: 5vh;
+    left: max(170px,17vw);
+    bottom: max(25px,4.5vh);
 }
 
 .form-item input:required:invalid + span::after {
