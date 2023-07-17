@@ -132,6 +132,7 @@ button {
     border: none;
     font-size: max(1vw,0.8rem);
     font-weight: 600;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -156,7 +157,7 @@ button:hover {
     font-family: inter;
     font-size: 0.75rem;
     left: max(170px,17vw);
-    bottom: max(42px,4.5vh);
+    bottom: max(22px,4.5vh);
 }
 
 .form-item input:required:invalid + span::after {
@@ -189,4 +190,18 @@ button:hover {
     left: max(875px,min(74vw,890px));
     bottom: 40vh;
     opacity: 1;
+}
+
+.confirm-password {
+    position:absolute;
+    color:white;
+    content:"";
+    background-color: var(--invalid-red);
+    top: max(6.5vh,38px);
+    left: max(75px,12.3vw);
+    display: none;
+    font-family: inter;
+    font-size: 0.75rem;
+    padding: 3px;
+    border-radius: 3px;
 }
