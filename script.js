@@ -12,9 +12,9 @@ function checkPassword() {
         confirmPasswordText.style.display="inline";
         confirmPasswordField.style.backgroundColor = "rgba(255, 0, 0, 0.411)";
         confirmPasswordField.style.borderColor = "rgb(155, 58, 58)";
-        if (confirmPassword === "" && password === "") {
-            confirmPasswordField.style.backgroundColor = "white";
-            confirmPasswordField.style.borderColor = "#AAA";
+        if (password === "") {
+            passwordField.style.backgroundColor = "white";
+            passwordField.style.borderColor = "#AAA";
         }
     }
     else {
@@ -23,6 +23,8 @@ function checkPassword() {
         confirmPasswordText.style.display="none";
         confirmPasswordField.style.backgroundColor = "rgba(50, 177, 0, 0.336)";
         confirmPasswordField.style.borderColor = "#266417";
+        passwordField.style.backgroundColor = "rgba(50, 177, 0, 0.336)";
+        passwordField.style.borderColor = "#266417";
         if (confirmPassword === "" && password === "") {
             confirmPasswordField.style.backgroundColor = "white";
             confirmPasswordField.style.borderColor = "#AAA";
@@ -30,11 +32,13 @@ function checkPassword() {
             passwordField.style.borderColor = "#AAA";
         }
     }
-    if (password.length < 6 && password !== "" && confirmPassword !== "") {
-        passwordField.style.backgroundColor = "rgba(255, 0, 0, 0.411)";
-        passwordField.style.borderColor = "rgb(155, 58, 58)";
-        confirmPasswordField.style.backgroundColor = "rgba(255, 0, 0, 0.411)";
-        confirmPasswordField.style.borderColor = "rgb(155, 58, 58)";
+    if (password !== "" && password.length < 6) {
+            passwordField.style.backgroundColor = "rgba(255, 0, 0, 0.411)";
+            passwordField.style.borderColor = "rgb(155, 58, 58)";
+        }
+    if (confirmPassword !== "" && confirmPassword.length < 6) {
+            confirmPasswordField.style.backgroundColor = "rgba(255, 0, 0, 0.411)";
+            confirmPasswordField.style.borderColor = "rgb(155, 58, 58)";
     }
 
 }
