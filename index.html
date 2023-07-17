@@ -37,17 +37,17 @@
                     </li>
                     <li class="form-item">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number" placeholder=" ">
+                        <input type="tel" id="phone-number" name="phone-number" placeholder=" " pattern="^\d{3}-?\d{3}-?\d{4}$" title="Please enter a phone number in the proper format (eg: 222-222-2222)" minlength="10" maxlength="13">
                         <span></span>
                     </li>
                     <li class="form-item">
                         <label for="pwd">Password</label>
-                        <input type="password" id="pwd" name="password" required placeholder=" ">
+                        <input type="password" id="pwd" name="password" required placeholder=" " minlength="6" pattern="^(?=.*[!@#$%^&*()_\-+=>?])(?=.*[A-Za-z])[A-Za-z0-9!@#$%^&*()_\-+=>?]{6,}$" title="Passwords must be at least 6 characters in length with at least 1 upper and lowercase letter, 1 number, and 1 symbol (eg: !#@&_)">
                         <span></span>
                     </li>
                     <li class="form-item">
                         <label for="c-pwd">Confirm Password</label>
-                        <input type="password" id="c-pwd" name="confirmed-password" required placeholder=" ">
+                        <input type="password" id="c-pwd" name="confirmed-password" required placeholder=" " minlength="6" pattern="^(?=.*[!@#$%^&*()_\-+=>?])(?=.*[A-Za-z])[A-Za-z0-9!@#$%^&*()_\-+=>?]{6,}$" title="Passwords must be at least 6 characters in length with at least 1 upper and lowercase letter, 1 number, and 1 symbol (eg: !#@&_)">
                         <span></span>
                     </li>
                     <li class="form-item">
